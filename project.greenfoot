@@ -1,4 +1,5 @@
 #Greenfoot project file
+<<<<<<< Updated upstream
 class.Hero.image=ppl1.png
 dependency1.from=MyWorld
 dependency1.to=Hero
@@ -8,6 +9,17 @@ editor.fx.0.width=816
 editor.fx.0.x=385
 editor.fx.0.y=9
 height=736
+=======
+class.Banana.image=bananas.png
+dependency1.from=MyWorld
+dependency1.to=Banana
+dependency1.type=UsesDependency
+editor.fx.0.height=731
+editor.fx.0.width=1280
+editor.fx.0.x=0
+editor.fx.0.y=29
+height=731
+>>>>>>> Stashed changes
 package.numDependencies=1
 package.numTargets=2
 project.charset=UTF-8
@@ -25,21 +37,33 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=70
-target1.name=Hero
+target1.name=MyWorld
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
 target1.x=0
 target1.y=0
 target2.height=70
+<<<<<<< Updated upstream
 target2.name=MyWorld
 target2.showInterface=false
+=======
+target2.name=Banana
+target2.showInterface=true
+>>>>>>> Stashed changes
 target2.type=ClassTarget
 target2.width=120
 target2.x=0
 target2.y=0
 version=3.1.0
+<<<<<<< Updated upstream
 width=1382
 world.lastInstantiated=MyWorld
 xPosition=0
 yPosition=0
+=======
+width=1280
+world.lastInstantiated=MyWorld
+xPosition=0
+yPosition=29
+>>>>>>> Stashed changes
