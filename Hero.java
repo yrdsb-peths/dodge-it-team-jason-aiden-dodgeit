@@ -14,5 +14,10 @@ public class Hero extends Actor
         {
             y -= 3;
         }
+        detectCollision();
+    }
+    public void detectCollision()
+    {
+        
     }
 }
