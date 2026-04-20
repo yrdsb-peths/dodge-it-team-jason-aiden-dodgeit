@@ -17,13 +17,12 @@ public class Hero extends Actor
         }
         if(y <= 5)
         {
-            y = 5;
-            speedY = 0;
+            speedY = 0.3;
         }
-        if(y >= 400)
+        if(y >= 395)
         {
-            y = 395;
-            speedY = 0;
+        
+            speedY = -0.3;
         }
         detectCollision();
         y += speedY;
