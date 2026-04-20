@@ -4,6 +4,6 @@ public class Hero extends Actor
 {
     public void act()
     {
-        setLocation(100,100)
+        setLocation(100,100);
     }
 }
