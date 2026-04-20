@@ -15,11 +15,11 @@ public class Hero extends Actor
         {
             speedY -= 0.3;
         }
-        if(y <= 5)
+        if(y <= 10)
         {
             speedY = 0.3;
         }
-        if(y >= 395)
+        if(y >= 390)
         {
         
             speedY = -0.3;
