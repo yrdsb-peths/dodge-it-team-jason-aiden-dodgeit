@@ -6,13 +6,13 @@ public class Hero extends Actor
     public void act()
     {
         setLocation(100,y);
-        if(Greenfoot.isKeyDown("s"))
+        if(Greenfoot.isKeyDown("s") || Greenfoot.isKeyDown("down"))
         {
-            y += 3;
+            y *= 1.05;
         }
-        if(Greenfoot.isKeyDown("w"))
+        if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up"))
         {
-            y -= 3;
+            y *= 0.05;
         }
         detectCollision();
     }
