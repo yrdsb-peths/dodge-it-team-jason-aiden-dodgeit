@@ -2,28 +2,39 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Hero extends Actor
 {
-    int y = 100;
 
-
-
+    double y = 100;
+    double speedY = 0;
+    
     public Hero() {
         GreenfootImage image = new GreenfootImage("ppl1.png");
         setImage(image);
     }
 
 
+
     public void act()
     {
-        setLocation(100,y);
+        setLocation(100, (int)y);
         if(Greenfoot.isKeyDown("s") || Greenfoot.isKeyDown("down"))
         {
-            y *= 1.05;
+            speedY += 0.3;
         }
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up"))
         {
-            y *= 0.05;
+            speedY -= 0.3;
+        }
+        if(y <= 5)
+        {
+            speedY = 0.3;
+        }
+        if(y >= 395)
+        {
+        
+            speedY = -0.3;
         }
         detectCollision();
+        y += speedY;
     }
     public void detectCollision()
     {
