@@ -11,8 +11,6 @@ public class Hero extends Actor
         setImage(image);
     }
 
-
-
     public void act()
     {
         setLocation(100, (int)y);
