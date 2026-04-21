@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Life extends Actor
 {
     public Life() {
-        GreenfootImage image = new GreenfootImage("hertz.png");
+        GreenfootImage image = new GreenfootImage("herz.png");
         setImage(image);
     }
     
