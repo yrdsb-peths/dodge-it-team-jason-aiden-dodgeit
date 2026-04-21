@@ -36,7 +36,7 @@ public class Banana extends Actor
         if (isTouching(Hero.class)) {
             resetLocation();
             MyWorld.lives -= 1;
-            if(MyWorld.lives == 1)
+            if(MyWorld.lives == 0)
             {
                 getWorld().removeObject(this);
             }

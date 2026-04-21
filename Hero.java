@@ -34,7 +34,7 @@ public class Hero extends Actor
             y = 5.0;
         }
         y += speedY;
-        if(MyWorld.lives == 1)
+        if(MyWorld.lives == 0)
         {
             getWorld().removeObject(this);
         }
