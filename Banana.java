@@ -41,6 +41,7 @@ public class Banana extends Actor
             {
                 getWorld().removeObject(this);
             }
+            MyWorld.score = 0;
         }
     }
 }
