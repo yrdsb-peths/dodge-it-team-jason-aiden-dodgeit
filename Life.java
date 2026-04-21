@@ -15,15 +15,15 @@ public class Life extends Actor
     
     public void act()
     {
-        if(MyWorld.lives == 2 && getX() == 350)
+        if(MyWorld.lives == 3 && getX() == 350)
         {
             getWorld().removeObject(this);
         }
-        if(MyWorld.lives == 1 && getX() == 450)
+        if(MyWorld.lives == 2 && getX() == 450)
         {
             getWorld().removeObject(this);
         }
-        if(MyWorld.lives == 0 && getX() == 550)
+        if(MyWorld.lives == 1 && getX() == 550)
         {
             getWorld().removeObject(this);
         }
