@@ -30,4 +30,10 @@ public class Banana extends Actor
         setLocation(600, Greenfoot.getRandomNumber(400));
         
     }
+
+    public void detectCollision() {
+        if (isTouching(Hero.class)) {
+            resetLocation();
+        }
+    }
 }
