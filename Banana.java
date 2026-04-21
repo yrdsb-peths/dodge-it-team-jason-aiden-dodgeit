@@ -20,8 +20,9 @@ public class Banana extends Actor
 
     public void act()
     {
-        move(-5);
+        move((int)(-5 * (1 + (double)MyWorld.score / 25)));
         if (getX() <= 0) {
+            MyWorld.score += 1;
             resetLocation();
         }
         detectCollision();
