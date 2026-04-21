@@ -24,14 +24,14 @@ public class Hero extends Actor
         {
             speedY -= 0.3;
         }
-        if(y <= 10)
+        if(y < 10)
         {
-            speedY = 0.3;
+            y = 390.0;
         }
-        if(y >= 390)
+        if(y > 390)
         {
         
-            speedY = -0.3;
+            y = 5.0;
         }
         detectCollision();
         y += speedY;
