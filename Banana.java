@@ -24,6 +24,7 @@ public class Banana extends Actor
         if (getX() <= 0) {
             resetLocation();
         }
+        detectCollision();
     }
 
     public void resetLocation() {
