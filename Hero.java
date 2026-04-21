@@ -28,16 +28,11 @@ public class Hero extends Actor
         {
             y = 390.0;
         }
-        if(y > 390)
+        if(y > 391)
         {
         
             y = 5.0;
         }
-        detectCollision();
         y += speedY;
-    }
-    public void detectCollision()
-    {
-        
     }
 }
